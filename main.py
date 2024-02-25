@@ -8,6 +8,11 @@ class MainWindow(tkinter.Frame):
         self.parent.title("První GUI aplikace")
         self.create_widgets()
 
+        def create_widgets(self):
+            self.label = tkinter.Label(text="Hello world!")
+            self.label.pack()
+
+
 root = tkinter.Tk()
 app = MainWindow(root)
 app.mainloop()
