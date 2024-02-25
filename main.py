@@ -10,7 +10,6 @@ class MainWindow(tkinter.Frame):
         self.parent.rowconfigure(1, weight=500) # nastavení řádku
         self.parent.columnconfigure(0, weight=1000) # nastavení sloupce
         self.parent.minsize(500, 200)   # minimální velikost okna
-        self.parent.resizable(True) # měnitelnost okna
         self.create_widgets()
 
     def create_widgets(self):
