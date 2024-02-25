@@ -11,9 +11,8 @@ class MainWindow(tkinter.Frame):
     def create_widgets(self):
         self.label_1 = tkinter.Label(text="Hello world!", bg="white") # bílý label
         self.label_2 = tkinter.Label(text="Hello world!", bg="yellow") # žlutý label
-        #nastavení geometrie
-        self.label_1.pack(side=tkinter.TOP, fill=tkinter.X, expand=True)
-        self.label_2.pack(side=tkinter.BOTTOM, fill=tkinter.Y, expand=True)
+        self.label_1.place(x=40, y=60, anchor=tkinter.N)
+        self.label_2.place(x=40, y=60, anchor=tkinter.S)
 
 
 root = tkinter.Tk()
